@@ -59,10 +59,18 @@
             
         ?>
 
-        <script src="scripts/jquery/3.1.1/jquery.min.js"></script>
+        
+        <script data-main="scripts/common" src="scripts/requirejs/2.3.2/require.js"></script>
+        <script>
+            require(['app'], function(methods) {
+                //methods.welcomeAlert();
+            });
+        </script>
+
+        <!--<script src="scripts/jquery/3.1.1/jquery.min.js"></script>
         <script src="scripts/bootstrap/3.3.7/bootstrap.min.js"></script>
         <script src="scripts/http-service.js"></script>
-        <script src="scripts/index.js"></script>
+        <script src="scripts/index.js"></script>-->
 
         <?php
 
